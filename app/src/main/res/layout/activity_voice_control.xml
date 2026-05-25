@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ========== 图传显示区域（全屏背景） ========== -->
+    <dji.ux.widget.FPVWidget
+        android:id="@+id/fpv_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- ========== 控制面板（浮在图传上方） ========== -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 飞行控制按钮组 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="飞行控制"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btn_enable_virtual_stick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="开启虚拟摇杆" />
+
+            <Button
+                android:id="@+id/btn_disable_virtual_stick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="关闭虚拟摇杆" />
+
+            <Button
+                android:id="@+id/btn_take_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="起飞" />
+
+            <Button
+                android:id="@+id/btn_land"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="降落" />
+
+            <!-- 语音控制按钮组 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="语音控制"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btn_voice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="按住说话"
+                android:backgroundTint="@android:color/holo_blue_dark" />
+
+            <!-- 状态显示区域 -->
+            <TextView
+                android:id="@+id/tv_voice_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="点击按钮，说出指令"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="#CC000000"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textview_simulator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="状态：待机"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:background="#80000000"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
