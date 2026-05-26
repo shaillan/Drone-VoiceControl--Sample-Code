@@ -63,8 +63,10 @@ import dji.sdk.base.BaseProduct;
 public class VoiceControlActivity extends AppCompatActivity {
 
     // 百度语音配置（填你从控制台拿到的值）
-    private static final String API_KEY = "";
-    private static final String SECRET_KEY = "";
+
+    private static final String API_KEY = "YOUR_API_KEY";
+    private static final String SECRET_KEY = "YOUR_SECRET_KEY";
+
 
     // UI 控件
     private Button btnEnableVirtualStick, btnDisableVirtualStick, btnTakeOff, btnVoice,btnLand;
