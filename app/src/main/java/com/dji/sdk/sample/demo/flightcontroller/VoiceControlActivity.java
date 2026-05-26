@@ -36,7 +36,7 @@ import dji.sdk.sdkmanager.DJISDKManager;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
+import android.annotation.SuppressLint;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -59,7 +59,7 @@ import dji.sdk.sdkmanager.DJISDKManager.SDKManagerCallback;
 import dji.common.error.DJIError;
 import dji.sdk.sdkmanager.DJISDKManager;
 import dji.sdk.base.BaseProduct;
-
+@SuppressLint("NewApi")
 public class VoiceControlActivity extends AppCompatActivity {
 
     // 百度语音配置（填你从控制台拿到的值）
