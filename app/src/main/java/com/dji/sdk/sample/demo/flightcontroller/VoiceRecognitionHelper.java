@@ -25,8 +25,8 @@ public class VoiceRecognitionHelper {
     private static final String TAG = "VoiceRecognitionHelper";
 
     // 百度语音配置
-    private static final String API_KEY = "NdWwDA5EuGkZgyqDzyPhRrBT";
-    private static final String SECRET_KEY = "ptdFtHYiuDT4aWITmD4rTmhkKKSQmntF";
+    private static final String API_KEY = " ";
+    private static final String SECRET_KEY = " ";
     private static final int SAMPLE_RATE = 16000;
 
     private Activity activity;

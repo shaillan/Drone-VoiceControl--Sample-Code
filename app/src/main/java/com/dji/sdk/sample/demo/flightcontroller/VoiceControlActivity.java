@@ -166,7 +166,7 @@ public class VoiceControlActivity extends AppCompatActivity implements SurfaceHo
 
     private void executeVoiceCommand(String spokenText) {
         String url = "https://api.deepseek.com/chat/completions";
-        String apiKey = "sk-795701ba90b142c08b6980c17ce827b0";
+        String apiKey = "yourApi_key";
 
         new Thread(() -> {
             try {
